@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /**
- * betty style doc for function main goes there
+ * main - This prints the numbertype, -ve or +ve
  * function containing if conditions
  * for execution
  */
