@@ -6,7 +6,8 @@
 /**
  * main - This prints the numbertype, -ve or +ve
  * function containing if conditions
- * for execution
+ * for execution.
+ * Return: 1 if the number is positive. 0 otherwise
  */
 int main(void)
 {
@@ -28,6 +29,7 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
+
 
 	return (0);
 }
