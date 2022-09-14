@@ -1,5 +1,4 @@
-#include <unistd.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * main - prints the string with a new line
