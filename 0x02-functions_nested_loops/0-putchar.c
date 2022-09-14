@@ -4,7 +4,7 @@
  * main - prints the string with a new line
  * Return: the function returns 0
  */
-int main()
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -14,6 +14,7 @@ int main()
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
