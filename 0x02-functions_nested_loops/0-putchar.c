@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include <_putchar.h>
+#include <main.h>
 
 /**
  * main - prints the string with a new line
