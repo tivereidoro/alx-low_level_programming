@@ -3,15 +3,15 @@
 /**
  * _puts_recursion - puts/prints a string
  *
- * @*s: the string to be printed
+ * @s: the string to be printed
  *
  * Return: the string printed
  */
 void _puts_recursion(char *s)
 {
-	if (*s == "\0")
+	if (*s == '\0')
 	{
-		_putchar("\n");
+		_putchar('\n');
 		return;
 	}
 
