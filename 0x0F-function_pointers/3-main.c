@@ -1,20 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 
 /**
-* main - Entry point
+* main - calls other functions
+* @argc: argument count
+* @argv: argument vector
 *
-* @argc: length of command line arguments
-*
-* @argv: double pointer to cli arguments
-*
-* Return: 0
+* Return: error if conditions not met
 */
-
 int main(int argc, char *argv[])
 {
-	int (*func_ptr)(int, int);
+	int i = 0, j = 0, ret = 0;
+	char s;
 
 	if (argc != 4)
 	{
@@ -28,15 +24,16 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	func_ptr = get_op_func(argv[2]);
-
-	if (func_ptr == NULL)
+	s = argv[2][0];
+	if (s != '+' && s != '-' && s != '/' && s != '*' && s != '%')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	printf("%d\n", func_ptr(atoi(argv[1]), atoi(argv[3])));
-
+	i = atoi(argv[1]);
+	j = atoi(argv[3]);
+	ret = (get_op_func(argv[2]))(i, j);
+	printf("%d\n", ret);
 	return (0);
 }

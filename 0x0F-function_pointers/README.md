@@ -1,13 +1,33 @@
 # 0x0F. C - Function pointers
 
-## Files and description
+This repository explores the usages of pointers to functions.
 
-0-print_name.c - Writes a function that prints a name.
+## 0. print_name
 
-1-array_iterator.c - Writes a function that executes a function given as a parameter on each element of an array.
+Prints a name using callbacks
 
-2-int_index.c - Writes a function that searches for an integer.
+## 1. array_iterator
 
-3-get_op_func.c - Writes a program that performs simple operations.
+Executes a function given as a parameter on each element of the array
 
-100-main_opcodes.c - Writes a program that prints the opcodes of its own main function.
+> - `size` is the size of the array
+> - `action` is a pointer to the function needed to be used
+
+## 2. int_index
+
+Searches for an integer
+
+> - `size` is the number of elements in the array `array`
+> - `cmp` is a pointer to the function to be used to compare values
+> - `int_index` returns the index of the first element for which the `cmp` function does not return `0`
+> - if no element matches return `-1`
+> - if `size` <= `0` return `-1`
+
+## 3. A program that performs simple operations
+
+The program prints te result of the operation followed by a new line
+ > - The result of all operations can be stored in an int
+ > - if number of args is wrong print `Error` followed by a new line and exit with status `98`
+ > - if the `operator` is none of the ones provided print `Error` followed by a new line and exit with status `99`
+ > - if the user tries to divide (`/` or `%`) by `0`, print `Error` followed by a new line and exit with status `100`
+
