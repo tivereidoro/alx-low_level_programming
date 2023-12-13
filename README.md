@@ -1,6 +1,9 @@
+<div align="center">
+
 ## ALX SOFTWARE ENGINEERING.!#
 ## alx-low_level_programming directory.
 ##
+</div>
 
 ### This directory contains all my task solutions for the C language programming.
 
